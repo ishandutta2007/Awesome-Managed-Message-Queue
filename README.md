@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Managed-Message-Queue/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Managed-Message-Queue?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Message-Queue/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Managed-Message-Queue?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Managed-Message-Queue/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Managed-Message-Queue?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Managed-Message-Queue/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -65,11 +65,11 @@ Commercial cloud message queuing solutions sorted by estimated company valuation
 
 ## 🔓 Open-Source GitHub Projects
 
-Top open-source message brokers, task queue frameworks, and Kubernetes autoscalers. Ranked strictly by **GitHub Star Count (descending)**.
+Top open-source message brokers, task queue frameworks, and Kubernetes autoscalers. Ranked strictly by **GitHub Stars_Count (descending)**.
 
 ### 📬 Message Brokers & Event Streaming
 
-| Project & Repo Link | GitHub Star Count | License | Key Features & Best Use Case |
+| Project & Repo Link | GitHub Stars_Count | License | Key Features & Best Use Case |
 | :--- | :--- | :--- | :--- |
 | **[Apache Kafka](https://github.com/apache/kafka)** | [<img src="https://img.shields.io/github/stars/apache/kafka?style=social&color=white" alt="Kafka Stars"/>](https://github.com/apache/kafka/stargazers) | Apache-2.0 | **The de facto standard for distributed event streaming.** High-throughput pub/sub, log persistence, Kafka Connect ecosystem, and event-driven architectures. |
 | **[NATS](https://github.com/nats-io/nats-server)** | [<img src="https://img.shields.io/github/stars/nats-io/nats-server?style=social&color=white" alt="NATS Stars"/>](https://github.com/nats-io/nats-server/stargazers) | Apache-2.0 | **Cloud-native, ultra-high-performance messaging system.** Lightweight pub/sub with JetStream persistence layer, built-in key-value & object store capabilities. |
@@ -84,7 +84,7 @@ Top open-source message brokers, task queue frameworks, and Kubernetes autoscale
 
 ### ⚙️ Task Queues & Background Job Processing
 
-| Project & Repo Link | GitHub Star Count | License | Key Features & Best Use Case |
+| Project & Repo Link | GitHub Stars_Count | License | Key Features & Best Use Case |
 | :--- | :--- | :--- | :--- |
 | **[Celery](https://github.com/celery/celery)** | [<img src="https://img.shields.io/github/stars/celery/celery?style=social&color=white" alt="Celery Stars"/>](https://github.com/celery/celery/stargazers) | BSD-3-Clause | **Distributed task queue for Python.** Real-time task processing with RabbitMQ or Redis backends, task retries, scheduling, and canvas workflows. |
 | **[Sidekiq](https://github.com/sidekiq/sidekiq)** | [<img src="https://img.shields.io/github/stars/sidekiq/sidekiq?style=social&color=white" alt="Sidekiq Stars"/>](https://github.com/sidekiq/sidekiq/stargazers) | LGPL-3.0 | **Simple, efficient background processing for Ruby.** Multi-threaded Redis-backed job processing with automatic retries and dead job set management. |
@@ -99,7 +99,7 @@ Top open-source message brokers, task queue frameworks, and Kubernetes autoscale
 
 ### ☸️ Kubernetes-Native Queuing
 
-| Project & Repo Link | GitHub Star Count | License | Key Features & Best Use Case |
+| Project & Repo Link | GitHub Stars_Count | License | Key Features & Best Use Case |
 | :--- | :--- | :--- | :--- |
 | **[KEDA](https://github.com/kedacore/keda)** | [<img src="https://img.shields.io/github/stars/kedacore/keda?style=social&color=white" alt="KEDA Stars"/>](https://github.com/kedacore/keda/stargazers) | Apache-2.0 | **Kubernetes Event-driven Autoscaling.** Automatically scales K8s pods from 0 to N based on queue depth (SQS, RabbitMQ, Kafka, Redis). |
 | **[KubeMQ Community](https://github.com/kubemq-io/kubemq-community)** | [<img src="https://img.shields.io/github/stars/kubemq-io/kubemq-community?style=social&color=white" alt="KubeMQ Stars"/>](https://github.com/kubemq-io/kubemq-community/stargazers) | Apache-2.0 | **Kubernetes-native message queue and broker.** Ultra-lightweight containerized messaging with pub/sub, queue pattern, and gRPC endpoints. |
@@ -140,7 +140,7 @@ If this curated repository saved you time, helped you architect your backend que
 ## 🤝 How to Contribute
 
 1. **Fork** this repository.
-2. Add or update entries in `README.md` maintaining table formatting, pricing, and exact star badges.
+2. Add or update entries in `README.md` maintaining table formatting, pricing, and exact Stars_Badges.
 3. Keep descriptions concise, factual, and links directed to official documentation.
 4. Submit a **Pull Request** with a clear title and description.
 
