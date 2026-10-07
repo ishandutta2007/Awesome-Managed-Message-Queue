@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.4" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="1200" height="320" fill="url(#bgGrad)" rx="16" />
+  <rect width="1200" height="320" fill="url(#grid)" rx="16" />
+
+  <!-- Dynamic / Animated Wave Background Elements (In Background Behind Text) -->
+  <g opacity="0.35">
+    <path d="M -100 200 Q 150 100 400 220 T 900 180 T 1300 240" fill="none" stroke="#6366f1" stroke-width="3">
+      <animate attributeName="d" 
+               values="M -100 200 Q 150 100 400 220 T 900 180 T 1300 240;
+                       M -100 180 Q 150 240 400 160 T 900 230 T 1300 190;
+                       M -100 200 Q 150 100 400 220 T 900 180 T 1300 240" 
+               dur="12s" repeatCount="indefinite" />
+    </path>
+    <path d="M -100 250 Q 200 280 500 180 T 1000 220 T 1300 160" fill="none" stroke="#ec4899" stroke-width="2" stroke-dasharray="8 6">
+      <animate attributeName="d" 
+               values="M -100 250 Q 200 280 500 180 T 1000 220 T 1300 160;
+                       M -100 220 Q 200 150 500 250 T 1000 170 T 1300 230;
+                       M -100 250 Q 200 280 500 180 T 1000 220 T 1300 160" 
+               dur="16s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Dynamic Queue Message Packets Moving in Background -->
+  <g opacity="0.6">
+    <circle r="6" fill="#38bdf8" filter="url(#glow)">
+      <animateMotion path="M 50,260 Q 300,280 600,260 T 1150,260" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle r="8" fill="#a855f7" filter="url(#glow)">
+      <animateMotion path="M 50,260 Q 300,280 600,260 T 1150,260" dur="8s" begin="2s" repeatCount="indefinite" />
+    </circle>
+    <circle r="5" fill="#f43f5e" filter="url(#glow)">
+      <animateMotion path="M 50,260 Q 300,280 600,260 T 1150,260" dur="5s" begin="1s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Subtle Ambient Glow Orbs -->
+  <circle cx="200" cy="80" r="140" fill="url(#glowGrad)" />
+  <circle cx="1000" cy="240" r="160" fill="url(#glowGrad)" />
+
+  <!-- Decorative Top Bar -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#accentGrad)" />
+
+  <!-- Main Content Foreground Layer (Guaranteed High Contrast & Readability) -->
+  <g text-anchor="middle">
+    <!-- Icon/Badge Graphic Above Title -->
+    <g transform="translate(600, 75)">
+      <rect x="-80" y="-18" width="160" height="32" rx="16" fill="#1e293b" stroke="#475569" stroke-width="1" />
+      <text x="0" y="3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#38bdf8" letter-spacing="1.5">OCTOBER 2026 EDITION</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      Awesome Managed Message Queue
+    </text>
+
+    <!-- Gradient Subtitle / Tagline -->
+    <text x="600" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#94a3b8">
+      Curated SaaS Platforms, Enterprise Cloud Brokers &amp; Open-Source Task Queues
+    </text>
+
+    <!-- Feature Pills / Highlights -->
+    <g transform="translate(600, 245)">
+      <!-- Pill 1 -->
+      <g transform="translate(-240, 0)">
+        <rect x="-80" y="-16" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cbd5e1">⚡ Managed SaaS Queues</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(0, 0)">
+        <rect x="-85" y="-16" width="170" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cbd5e1">🚀 Open-Source Brokers</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(240, 0)">
+        <rect x="-80" y="-16" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#cbd5e1">🛠️ Task Processing</text>
+      </g>
+    </g>
+  </g>
+</svg>
